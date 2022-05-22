@@ -41,7 +41,11 @@ const FinalView = () => {
     background: "#000",
   };
 
-  return <Fireworks></Fireworks>;
+  return (
+    <Fireworks>
+      <div className="w-full flex flex-wrap items-center justify-center"></div>
+    </Fireworks>
+  );
 };
 
 export default FinalView;

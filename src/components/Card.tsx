@@ -32,6 +32,9 @@ const Card: React.FC<ICard> = ({ id, image, clicked, found }) => {
             backgroundColor: "#98c1d9",
           }}
           onClick={() => {
+            if (clicked) {
+              return;
+            }
             handleSelectedCard(id, image);
           }}
         ></div>

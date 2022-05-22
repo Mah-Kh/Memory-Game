@@ -89,7 +89,7 @@ const CardsProvider: React.FC<any> = ({ children }: any) => {
     cards.forEach((card) => {
       card.clicked = false;
     });
-    setClick(!click);
+    // setClick(!click);
     // collect click number to show it as game results
     setClickNumbers((c) => c + 1);
     // set clicked property as true for the current card to show the front
